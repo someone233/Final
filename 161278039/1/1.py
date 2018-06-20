@@ -1,0 +1,17 @@
+li=input('')
+s=li.split()
+a=int(s[0])
+b=int(s[1])
+c=a*b
+a=str(a)
+b=str(b)
+c=str(c)
+m=max(len(a),len(b),len(c))
+a=a.rjust(m)
+b=b.rjust(m)
+c=c.rjust(m)
+print(a)
+print(b)
+for i in range(0,m):
+    print('-',end="")
+print("\n"+c)
